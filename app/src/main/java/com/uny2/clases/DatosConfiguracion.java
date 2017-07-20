@@ -15,9 +15,9 @@ import java.util.ArrayList;
  * Created by La che Wendy on 17/02/2016.
  */
 public class DatosConfiguracion {
- //  public static String endpoint ="http://172.29.15.13:9090/WSVSCB/webresources/";
+    public static String endpoint ="http://172.29.15.211:9090/WSVSCB/webresources/";
 //    public static String endpoint ="http://192.168.8.40:9090/WSVSCB/webresources/";
-   public static String endpoint ="http://10.30.206.54:8085/WSVSCB/webresources/";
+   //public static String endpoint ="http://10.30.206.54:8085/WSVSCB/webresources/";
     private String consultaAutentificacion = "ServicioAutentificacion?parametros=";
     private String recuperacionPass = "ServicioRestaurarContrasena?parametros=";
     private String resultadoConteo ="resultadoConteo?mac=";

@@ -238,7 +238,7 @@ public class RecoleccionUbicacionActivity extends AppCompatActivity {
                                     edtRecoleccion.requestFocus();
                                     edtCantidadRecoleccion.setFocusable(false);
                                     edtCantidadRecoleccion.setFocusableInTouchMode(true);
-                                    btnConfirmar.setFocusable(false);
+                                    btnConfirmar.setFocusable(false );
                                     btnManual.setFocusable(false);
                                     btnGenerarNegado.setFocusable(false);
                                     btnConfirmar.clearFocus();
