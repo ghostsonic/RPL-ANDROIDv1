@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tvNumeroped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txtNumeroPedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNumeroped"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="NUMERO PEDIDO..." />
+
+    <TextView
+        android:id="@+id/txtCodigoErroneo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/txtNumeroPedido"
+        android:text="Código Erróneo"
+        android:textColor="#F00" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCodigoErroneo"
+        android:text="Cancelar" />
+
+   <!-- <Button
+        android:id="@+id/btnValidar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Validar"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/btnCancelar"
+        android:layout_toRightOf="@+id/btnCancelar"
+        android:layout_toEndOf="@+id/btnCancelar" />-->
+
+</RelativeLayout>

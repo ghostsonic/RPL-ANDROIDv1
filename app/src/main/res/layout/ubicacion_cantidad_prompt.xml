@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+
+    <TextView
+        android:id="@+id/txtLabelCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Código:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/edtNumeroPedido"
+        android:layout_alignBottom="@+id/txtCantidadUbicacion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/edtNumeroPedido"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="Escanea"
+        android:inputType="text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtLabelCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Cantidad:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/txtCantidadUbicacion"
+        android:layout_alignBottom="@+id/txtCantidadUbicacion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/txtCantidadUbicacion"
+        android:layout_width="60dp"
+        android:gravity="right"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="1"
+        android:layout_below="@id/edtNumeroPedido"
+        android:layout_alignRight="@id/edtNumeroPedido"
+        android:layout_alignEnd="@id/edtNumeroPedido" />
+
+    <Button
+        android:id="@+id/btnManualUbicacion"
+        android:layout_width="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_height="wrap_content"
+        android:text="Manual"
+        android:layout_alignBottom="@+id/txtCantidadUbicacion"
+        android:layout_toRightOf="@+id/edtNumeroPedido"
+        android:layout_toEndOf="@+id/edtNumeroPedido" />
+
+    <TextView
+        android:id="@+id/txtCodigoErroneo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/txtCantidadUbicacion"
+        android:text="Código Erróneo"
+        android:textColor="#F00" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="150dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCodigoErroneo"
+        android:text="Cancelar" />
+
+    <Button
+        android:id="@+id/btnValidarCantidad"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Validar"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/btnCancelar"
+        android:layout_toRightOf="@+id/btnCancelar"
+        android:layout_toEndOf="@+id/btnCancelar" />
+
+</RelativeLayout>

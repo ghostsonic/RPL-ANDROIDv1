@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/border">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout3">
+        <RelativeLayout
+            android:id="@+id/relativeNumeroEmpleado"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/a"
+                android:gravity="center"
+                android:text="Número de Empleado: "
+                android:textSize="25sp"
+                android:scaleType="fitCenter" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:id="@+id/txtNumeroUsuarioOlvida"
+                android:layout_below="@+id/a"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                android:textColor="#ff000000"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aceptar"
+                android:background="@drawable/border_button"
+                android:id="@+id/btn_aceptar"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffffffff"
+                android:layout_below="@+id/txtNumeroUsuarioOlvida"
+                android:layout_alignRight="@+id/txtNumeroUsuarioOlvida"
+                android:layout_alignEnd="@+id/txtNumeroUsuarioOlvida"
+                android:layout_marginRight="34dp"
+                android:layout_marginEnd="34dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:background="@drawable/border_button"
+                android:id="@+id/btn_cancelar"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#fff"
+                android:layout_below="@+id/txtNumeroUsuarioOlvida"
+                android:layout_alignLeft="@+id/txtNumeroUsuarioOlvida"
+                android:layout_alignStart="@+id/txtNumeroUsuarioOlvida"
+                android:layout_marginLeft="34dp"
+                android:layout_marginStart="34dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativePregunta"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtUsuario"
+                android:text="Usuario: MIKE "
+                android:textSize="25sp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/txtPregunta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtUsuario"
+                android:layout_alignLeft="@+id/txtRespuestaUsuarioOlvida"
+                android:layout_alignStart="@+id/txtRespuestaUsuarioOlvida" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="text"
+                android:id="@+id/txtRespuestaUsuarioOlvida"
+                android:layout_below="@+id/txtPregunta"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                android:textColor="#ff000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aceptar"
+                android:background="@drawable/border_button"
+                android:id="@+id/btn_aceptarRespuesta"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffffffff"
+                android:layout_below="@+id/txtRespuestaUsuarioOlvida"
+                android:layout_alignRight="@+id/txtRespuestaUsuarioOlvida"
+                android:layout_alignEnd="@+id/txtRespuestaUsuarioOlvida"
+                android:layout_marginRight="34dp"
+                android:layout_marginEnd="34dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:background="@drawable/border_button"
+                android:id="@+id/btn_cancelarRespuesta"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#fff"
+                android:layout_below="@+id/txtRespuestaUsuarioOlvida"
+                android:layout_alignLeft="@+id/txtRespuestaUsuarioOlvida"
+                android:layout_alignStart="@+id/txtRespuestaUsuarioOlvida"
+                android:layout_marginLeft="34dp"
+                android:layout_marginStart="34dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeCambiarPass"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp">
+           <TextView
+               android:id="@+id/txtNuevaPass"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/nuevo_pass"
+               android:textSize="20sp"
+               android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/edtNuevoPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_below="@+id/txtNuevaPass"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/txtConfirmarPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmar_pass"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/edtNuevoPass"/>
+
+            <EditText
+                android:id="@+id/edtConfirmarPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_below="@+id/txtConfirmarPass"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelar"
+                android:layout_below="@+id/edtConfirmarPass"
+                android:background="@drawable/border_button"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:id="@+id/buttonCancelarPass" />
+            <Button
+                android:id="@+id/btnConfirmarPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/cambiar_pass"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:background="@drawable/border_button"
+                android:layout_alignTop="@+id/buttonCancelarPass"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

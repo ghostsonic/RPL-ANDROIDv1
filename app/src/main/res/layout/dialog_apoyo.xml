@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!--TextView
+        android:id="@+id/LeyendaDialog"
+        android:text="CODIGO: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/codRefaccion"
+        android:text="000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_above="@+id/tv_scanCode"
+        android:layout_toRightOf="@+id/LeyendaDialog"
+        android:layout_toEndOf="@+id/LeyendaDialog" /-->
+    <EditText
+        android:id="@+id/tv_scanCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:enabled="true"
+        android:inputType="text"
+        android:hint="CODIGO REFACCION..." />
+    <TextView
+        android:id="@+id/etqCantidad"
+        android:text="CANTIDAD:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/tv_scanCode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp" />
+    <EditText
+        android:id="@+id/tv_cantidad"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:enabled="false"
+        android:maxLength="6"
+        android:focusable="true"
+        android:text="0.00"
+        android:textAlignment="textStart"
+        android:layout_alignBaseline="@+id/etqCantidad"
+        android:layout_alignBottom="@+id/etqCantidad"
+        android:layout_toRightOf="@+id/etqCantidad"
+        android:layout_toLeftOf="@+id/manualApoyo"
+        android:layout_toStartOf="@+id/manualApoyo" />
+    <TextView
+        android:id="@+id/txtFolioError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="#900"
+        android:layout_alignBottom="@+id/tv_cantidad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp" />
+    <Button
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:text="MANUAL"
+        android:id="@+id/manualApoyo"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/tv_scanCode"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

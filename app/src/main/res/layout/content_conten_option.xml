@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_conten_option"
+    tools:context=".ContenOptionActivity"
+    android:background="@drawable/fondo">
+    <!--Frame Entradas-->
+    <FrameLayout
+        android:id="@+id/fmEntradas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/txtCodigoEntrada"
+            android:hint="ESCANEAR CODIGO..."/>
+    </FrameLayout>
+    <!--Frame Ubicacion-->
+    <FrameLayout
+        android:id="@+id/fmUbicacion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/textView2"
+            android:layout_gravity="left|top" />
+    </FrameLayout>
+    <!--Frame Recoleccion-->
+    <FrameLayout
+        android:id="@+id/fmRecoleccion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/textView3"
+            android:layout_gravity="left|top" />
+    </FrameLayout>
+    <!--Frame Conteo-->
+    <FrameLayout
+        android:id="@+id/fmConteo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/textView4"
+            android:layout_gravity="left|top" />
+    </FrameLayout>
+    <!--Frame Perfiles-->
+    <FrameLayout
+        android:id="@+id/fmPerfiles"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/textView5"
+            android:layout_gravity="left|top" />
+    </FrameLayout>
+    <!--Frame Config-->
+    <FrameLayout
+        android:id="@+id/fmConfig"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/textView6"
+            android:layout_gravity="left|top" />
+    </FrameLayout>
+    <!--Frame ConfigSuper-->
+    <FrameLayout
+        android:id="@+id/fmConfigSuper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:id="@+id/textView7"
+            android:layout_gravity="left|top" />
+
+    </FrameLayout>
+</RelativeLayout>

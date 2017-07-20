@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearItem"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:layout_height="170dp"
+    android:descendantFocusability="blocksDescendants">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chekList"
+        android:enabled="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="0"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNumeroDePiezas"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="0"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignBaseline="@id/txtCodigoyUbicacion"
+        android:layout_alignBottom="@+id/txtCodigoyUbicacion"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/txtUnidadMedida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="dfgfdfg"
+        android:layout_alignTop="@+id/txtUbicacion"
+        android:layout_alignRight="@+id/txtNumeroDePiezas"
+        android:layout_alignEnd="@+id/txtNumeroDePiezas" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCodigoyUbicacion"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@+id/chekList"
+        android:layout_toEndOf="@+id/chekList" />
+
+    <TextView
+        android:id="@+id/txtUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicacion:"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/txtNumeroDePiezas"
+        android:layout_toRightOf="@+id/chekList"
+        android:layout_toEndOf="@+id/chekList" />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="UGF5673"
+        android:textSize="14sp"
+        android:layout_below="@id/txtUbicacion"
+        android:layout_toRightOf="@+id/chekList"
+        android:layout_toEndOf="@+id/chekList" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cantidad_recibida"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtDescripcion"
+        android:layout_toRightOf="@+id/chekList"
+        android:layout_toEndOf="@+id/chekList"
+        android:id="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/txtCantidadRecolectadaUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignRight="@+id/txtUnidadMedida"
+        android:layout_alignEnd="@+id/txtUnidadMedida" />
+
+
+</RelativeLayout>

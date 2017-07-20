@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/activarScannEntradas"
+        android:titleCondensed="Scanner ON/OFF"
+        android:title="Scanner ON/OFF"
+        android:icon="@android:drawable/button_onoff_indicator_on"
+        >
+    </item>
+</menu>

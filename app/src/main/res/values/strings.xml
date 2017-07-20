@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">AR-ADO</string>
+    <string name="title_activity_menu2">Menu2</string>
+    <string name="phUs">DIGITA USUARIO</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="phContra">DIGITA CONTRASEÑA</string>
+    <string name="title_activity_conten_option">ContenOption</string>
+    <string name="ingresa_codigo">Seleccione refacción</string>
+    <string name="ingresa_cantidad">Cantidad</string>
+    <string name="olvidar_pass">Olvidaste tu contraseña</string>
+    <string name="nuevo_pass">Nueva Contraseña</string>
+    <string name="confirmar_pass">Confirmar Contraseña</string>
+    <string name="cambiar_pass">Cambiar Contrasena</string>
+    <string name="numero_orden">Número de Orden</string>
+    <string name="almacen">Almacén</string>
+    <string name="procedencia">Procedencia</string>
+    <string name="fecha_pedido">Fecha de Pedido</string>
+    <string name="unidades_totales">Líneas Totales</string>
+    <string name="descripcion">Descripción</string>
+    <string name="ver_refacciones">Ver Refacciones</string>
+    <string name="codigo_barras">Código de Barras</string>
+    <string name="escanear_orden">Escanear Orden</string>
+    <string name="servicio_rpl">Orden Asignada</string>
+    <string name="escanear_orden_codigo">Escanear Código de Orden</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="ver_resumen">Ver Resumen</string>
+    <string name="articulo">Artículo:</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="escanee_salida">Escanea Código de Salida</string>
+
+    <string name="conteo_ciclico">CONTEO CICLICO</string>
+    <string name="entradas">ENTRADAS</string>
+    <string name="salidas">SALIDAS</string>
+    <string name="recoleccion">RECOLECCION</string>
+    <string name="ubicacion">UBICACION</string>
+    <string name="usuarios">PERFILES</string>
+    <string name="configuracion">CONFIGURACION</string>
+
+    <string name="ubicar">Ubicar</string>
+
+
+    <string name="confirma_ubicacion">Confirma Ubicación</string>
+    <string name="confirma_codigo">Confirma código</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Generales-->
+    <string name="cantidad_recibida">Cantidad Recibida:</string>
+    <string name="cantidad_recolectada">Cantidad Recolectada:</string>
+
+<!--Entradas-->
+    <string name="entrada_uno">Almacén Local (OP)</string>
+    <string name="entrada_dos">Consigna Local (CC)</string>
+    <string name="entrada_tres">Local Abastecimientos (OP)</string>
+    <string name="entrada_cuatro">Consigna Abastecimientos (CC)</string>
+    <string name="entrada_cinco">Traspaso Local (OT)</string>
+    <string name="entrada_seis">Traspaso Abastecimientos (OT)</string>
+    <string name="tipo_uno">(OP)</string>
+    <string name="tipo_dos">(CC)</string>
+    <string name="tipo_tres">(OP)</string>
+    <string name="tipo_cuatro">(CC)</string>
+    <string name="tipo_cinco">(OT)</string>
+    <string name="tipo_seis">(OT)</string>
+
+   <string-array name="opciones_menu">
+
+       <item>Cerrar sesión</item>
+   </string-array>
+
+
+    <!--Avisos y mensajes de Alerta  <item>Usuarios</item>-->
+
+    <string name="atencion">Atención!</string>
+    <string name="error">Error!</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="entendido">Entendido</string>
+    <string name="ocurrio_error">Ha ocurrido un error. Vuelve a intentar</string>
+    <string name="limite_excedido"></string>
+
+</resources>

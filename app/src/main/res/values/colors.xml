@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c61d23</color>
+    <color name="colorPrimaryDark">#c61d23</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorSelect">#cddbf2</color>
+    <color name="colorSelectDisabled">#8ab7ff</color>
+    <color name="colorSelectComplete">#31b404</color>
+    <color name="colorSelectSemicomplete">#80ffff00</color>
+    <color name="colorSelectIncomplete">#7dff0000</color>
+    <color name="transparente">#00000000</color>
+    <color name="blanco">#fff</color>
+    <color name="seleccion_transparente">#6c50e5ea</color>
+    <color name="apoyoCompleto">#adf5823f</color>
+    <color name="btn_manual_disabled">#60646B</color>
+    <color name="btn_manual_enabled">#c61d23</color>
+
+
+    <color name="color_consigna">#fcc373</color>
+    <color name="color_propiedad">#00aaf9</color>
+    <color name="negro">#000</color>
+</resources>

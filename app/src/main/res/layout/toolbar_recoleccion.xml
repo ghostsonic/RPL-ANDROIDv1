@@ -1,0 +1,60 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtBackRecoleccion"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/txtTituloRecoleccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recoleccion"
+                android:layout_marginLeft="16dp"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/txtBackRecoleccion"
+                android:layout_toEndOf="@+id/txtBackRecoleccion" />
+            <Button
+                android:id="@+id/btnOrden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:text="Ordenes"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btnLockRecoleccion"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/ic_lock_open"
+            android:visibility="gone"/>
+    </LinearLayout>
+    </android.support.v7.widget.Toolbar>

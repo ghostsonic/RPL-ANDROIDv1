@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuRPLT"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomenu"
+    tools:context=".MenuRPLActivity">
+
+    <include
+        android:id="@+id/toolbarPerfiles"
+        layout="@layout/toolbar_principal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:id="@+id/contentMenuRPL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:id="@+id/tr1"
+                    android:padding="5dp">
+
+                    <ImageButton
+                        android:id="@+id/btnEntradas"
+                        android:layout_width="300dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/recepcion" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tr2"
+                    android:padding="5dp">
+
+                    <ImageButton
+                        android:id="@+id/btnSalidas"
+                        android:layout_width="300dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/salidas" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tr3"
+                    android:padding="5dp">
+
+                    <ImageButton
+                        android:id="@+id/btnUbicacion"
+                        android:layout_width="300dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/ubicacion" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tr4"
+                    android:padding="5dp">
+
+                    <ImageButton
+                        android:id="@+id/btnRecoleccion"
+                        android:layout_width="300dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/recoleccion" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tr5"
+                    android:padding="5dp">
+
+                    <ImageButton
+                        android:id="@+id/btnConteo"
+                        android:layout_width="300dp"
+                        android:layout_height="75dp"
+                        android:background="@drawable/conteo_ciclico" />
+                </TableRow>
+            </TableLayout>
+            <!--<ImageButton
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:id="@+id/btnPerfiles"
+                android:background="@drawable/perfiles_mk"/>
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:id="@+id/btnConfig"
+                android:background="@drawable/configuracion_mk"/>-->
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearItemRecoleccion"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:layout_height="100dp"
+    android:descendantFocusability="blocksDescendants">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chekListPermisos"
+        android:enabled="false"
+        android:layout_below="@+id/txtCodigoyUbicacionRecoleccion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCodigoyUbicacionRecoleccion"
+        android:text="Modulo: ENTRADAS"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/chekListPermisos"
+        android:layout_toEndOf="@id/chekListPermisos" />
+
+        <TextView
+            android:id="@+id/txtModificador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modificador: MIKE"
+            android:textSize="12sp"
+            android:layout_below="@+id/txtCodigoyUbicacionRecoleccion"
+            android:layout_alignLeft="@+id/txtCodigoyUbicacionRecoleccion"
+            android:layout_alignStart="@+id/txtCodigoyUbicacionRecoleccion" />
+        <TextView
+            android:id="@+id/txtFechaCreacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha Creacion: 24/45/1099"
+            android:layout_below="@+id/txtModificador"
+            android:layout_alignLeft="@+id/txtCodigoyUbicacionRecoleccion" />
+
+        <TextView
+            android:id="@+id/txtFechaModificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha Modificacion: 24/45/1099"
+            android:layout_below="@+id/txtFechaCreacion"
+            android:layout_alignLeft="@+id/txtCodigoyUbicacionRecoleccion" />
+
+</RelativeLayout>
